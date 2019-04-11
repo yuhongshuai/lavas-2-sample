@@ -2,54 +2,54 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
     
-import _15549494287569d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
+import _15549882748969d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
     
 
     
-import _1554949428756f7fc7554d202a317883db2ae067316d3 from '@/pages/detail/_id.vue';
+import _1554988274896f7fc7554d202a317883db2ae067316d3 from '@/pages/detail/_id.vue';
     
 
     
-import _1554949428756d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
+import _1554988274896d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
     
 
     
-import _155494942875667830448037326425509e44bce7632b7 from '@/pages/Index.vue';
+import _155498827489667830448037326425509e44bce7632b7 from '@/pages/Index.vue';
     
 
     
-import _1554949428756038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
+import _1554988274896038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
     
 
 
 let routes = [
     {
         "path": "/appshell",
-        "component": _15549494287569d49a922ebc8a6d77ca82c0a74289b98,
+        "component": _15549882748969d49a922ebc8a6d77ca82c0a74289b98,
         "meta": {},
         "name": "appshell"
     },
     {
         "path": "/detail/:id",
-        "component": _1554949428756f7fc7554d202a317883db2ae067316d3,
+        "component": _1554988274896f7fc7554d202a317883db2ae067316d3,
         "meta": {},
         "name": "detailId"
     },
     {
         "path": "/",
-        "component": _155494942875667830448037326425509e44bce7632b7,
+        "component": _155498827489667830448037326425509e44bce7632b7,
         "meta": {},
         "name": "index"
     },
     {
         "path": "/search",
-        "component": _1554949428756038de326b0270e97f9eef95b6bc74ed7,
+        "component": _1554988274896038de326b0270e97f9eef95b6bc74ed7,
         "meta": {},
         "name": "search"
     },
     {
         "path": "/error",
-        "component": _1554949428756d2462dcf0c7beccd286c658e08187914,
+        "component": _1554988274896d2462dcf0c7beccd286c658e08187914,
         "meta": {},
         "name": "error",
         "alias": "*"

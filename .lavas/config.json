@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1554949428602,
+    "buildVersion": 1554988274861,
     "build": {
         "ssr": false,
         "publicPath": "/",
@@ -26,7 +26,7 @@
     },
     "serviceWorker": {
         "enable": true,
-        "swDest": "D:\\agit1901\\lavas\\lavas-2-sample\\dist\\service-worker.js"
+        "swDest": "D:\\agit\\lavas\\lavas-2-sample\\dist\\service-worker.js"
     },
     "skeleton": {
         "enable": true,

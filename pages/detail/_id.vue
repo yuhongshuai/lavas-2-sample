@@ -104,20 +104,45 @@ export default {
 //           setTimeout(resolve, 200);
 //       });
 //   },
+
   async asyncData() {
+
+    // let result = await axios({
+    //     method: "get",
+    //     url: ` https://www.easy-mock.com/mock/5c792c974cc0df4f4c70b378/list`,
+    //     // data: {
+    //     //   cityId:"2",
+    //     //   token:"677282c2f1b3d718152c4e25ed434bc4"
+    //     // },
+    //     // headers: {'Authorization': 'APPCODE 5e16e7abc1d845d199ce191751c000c9'},
+    // });
+
+
+
     let result = await axios({
         method: "post",
-        url: `http://dncverify.market.alicloudapi.com/clouds/dnc/deaderNumCheck`,
+        url: `http://freecityid.market.alicloudapi.com/whapi/json/alicityweather/briefforecast3days`,
         data: {
           cityId:"2",
           token:"677282c2f1b3d718152c4e25ed434bc4"
         },
-        headers: {'Authorization': 'APPCODE 5e16e7abc1d845d199ce191751c000c9'},
+        // headers: {'Authorization': 'APPCODE 5e16e7abc1d845d199ce191751c000c9'},
+        headers: {
+        // "Host":"freecityid.market.alicloudapi.com",
+        // "X-Ca-Timestamp":"1554988559355",
+        // // "gateway_channel":"http",
+        // "X-Ca-Request-Mode":"debug",
+        // "X-Ca-Key":"26006014",
+        // "X-Ca-Stage":"RELEASE",
+        // "x-ca-nonce":"3d03d09c-483c-43e5-9d5e-f873a018597e",
+        // "Content-Type":"application/x-www-form-urlencoded; charset=utf-8",
+        "Authorization":"APPCODE 5e16e7abc1d845d199ce191751c000c9"}
     });
     // let condition = result.data.query.results.channel.item.condition;
 
-    console.log(`Weather of Shanghai: ${result.code},${result.data}-----°F`);
-    console.log(`Weather of Shanghai: ${result.code},${result.data}-----°F`);
+    console.log(result);
+    console.log(`Weather of Shanghai: ${result.state},${result.data.list[1].id}-----°F`);
+    // console.log(`Weather of Shanghai: ${result.code},${result.data}-----°F`);
     // console.log(`Weather of Shanghai: ${condition.t/ext}, ${condition.temp}°F`);
   },
   activated() {
