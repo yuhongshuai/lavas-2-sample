@@ -117,16 +117,16 @@ export default {
     // });
 
     let result = await axios({
-      method: "get",
-      url: `http://toutiao-ali.juheapi.com/toutiao/index`,
-      // data: {
-      //     "companyCode": 5, // 快递公司编码
-      //     "expressNum": "669835935456" // 快递单号
-      // },
+      method: "post",
+      url: `http://expressq.market.alicloudapi.com/clouds/query/expressQuery`,
+      data: {
+          "companyCode": 5, // 快递公司编码
+          "expressNum": "669824383239" // 快递单号
+      },
       headers: {'Authorization': 'APPCODE 5e16e7abc1d845d199ce191751c000c9'},
-      params: {
-        type: "top"
-      }
+    //   params: {
+    //     type: "top"
+    //   }
       // headers: {
       // "Host":"freecityid.market.alicloudapi.com",
       // "X-Ca-Timestamp":"1554988559355",
